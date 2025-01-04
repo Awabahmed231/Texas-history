@@ -1,44 +1,74 @@
 # Texas-history
 Studying
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تاريخ تكساس</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="texas-logo.png" alt="شعار تكساس">
-        </div>
-        <h1>تاريخ تكساس</h1>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section class="intro">
-        <h2>نبذة عن تاريخ تكساس</h2>
-        <p>تكساس هي واحدة من الولايات الأمريكية التي تحمل تاريخًا طويلًا ومعقدًا، من الصراع مع المكسيك إلى الانضمام للاتحاد الأمريكي.</p>
-    </section>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <section class="battles">
-        <h2>الحروب والأحداث التاريخية</h2>
-        <h3>معركة الألمو</h3>
-        <p>تعد معركة الألمو واحدة من أشهر المعارك في تاريخ تكساس، حيث وقعت في عام 1836 بين القوات المكسيكية وقوات تكساس.</p>
-        <img src="battle-of-alamo.jpg" alt="معركة الألمو" class="battle-image">
-    </section>
+header {
+    background-color: #006f3d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
-    <section class="gallery">
-        <h2>معرض الصور التاريخية</h2>
-        <div class="images">
-            <img src="texas-history1.jpg" alt="تاريخ تكساس 1">
-            <img src="texas-history2.jpg" alt="تاريخ تكساس 2">
-            <img src="texas-history3.jpg" alt="تاريخ تكساس 3">
-        </div>
-    </section>
+header h1 {
+    font-size: 36px;
+}
 
-    <footer>
-        <p>جميع الحقوق محفوظة © 2025</p>
-    </footer>
-</body>
-</html>
+header .logo img {
+    width: 100px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #006f3d;
+}
+
+.battles {
+    background-color: #e2e2e2;
+}
+
+.battle-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
